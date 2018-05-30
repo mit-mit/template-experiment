@@ -14,7 +14,8 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Center(
-        child: RaisedButton(
+        child: CupertinoButton(
+          color: CupertinoColors.activeBlue,
           child: Text('Click me!'),
           onPressed: () {
             showGreeting(context, 'Hello from Flutter!');
@@ -28,7 +29,7 @@ class MyHomePage extends StatelessWidget {
     showDialog<Null>(
       context: context,
       builder: (BuildContext context) {
-        return AlertDialog(
+        return CupertinoAlertDialog(
           content: Text(greeting),
         );
       },

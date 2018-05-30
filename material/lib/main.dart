@@ -7,12 +7,14 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    const appDescription = 'Flutter Material App';
+
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: appDescription,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: appDescription),
     );
   }
 }
