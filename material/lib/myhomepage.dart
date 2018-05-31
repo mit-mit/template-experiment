@@ -9,6 +9,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const greeting = "Hello.\n\nWe hope you'll enyoy Flutter!";
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
@@ -17,7 +18,7 @@ class MyHomePage extends StatelessWidget {
         child: RaisedButton(
           child: Text('Click me!'),
           onPressed: () {
-            showGreeting(context, 'Hello from Flutter!');
+            showGreeting(context, greeting);
           },
         ),
       ),
