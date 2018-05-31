@@ -9,16 +9,17 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
+    const greeting = "Hello.\n\nWe hope you'll enyoy Flutter!";
+    return CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+        middle: Text(title),
       ),
-      body: Center(
+      child: Center(
         child: CupertinoButton(
           color: CupertinoColors.activeBlue,
           child: Text('Click me!'),
           onPressed: () {
-            showGreeting(context, 'Hello from Flutter!');
+            showGreeting(context, greeting);
           },
         ),
       ),
